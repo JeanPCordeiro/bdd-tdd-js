@@ -10,7 +10,6 @@ Given('un montant de prêt de {int} euros', function (int) {
 
 Given('un taux d\'intérêt de {float}%', function (float) {
   taux = float / 100;
-  console.log("taux =",taux);
 });
 
 Given('une durée de prêt de {int} ans', function (int) {
@@ -19,7 +18,6 @@ Given('une durée de prêt de {int} ans', function (int) {
 
 When('je calcule les mensualités', function () {
   mensualites = calculerMensualites(montant, taux, duree);
-  console.log("mensualites =",mensualites);
 });
 
 Then('les mensualités devraient être de {float} euros', function (float) {
